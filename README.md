@@ -53,3 +53,14 @@ npm run dev
 
 # Screenshots
 
+![LP-1](https://github.com/praveenhonavar/Decentralized-Voting/blob/master/output-screenshot/landingpage-1.png)
+
+![LP-3](https://github.com/praveenhonavar/Decentralized-Voting/blob/master/output-screenshot/landingpage-3.png)
+
+![dashboard](https://github.com/praveenhonavar/Decentralized-Voting/blob/master/output-screenshot/user1-confirming-vote.png)
+
+![vote-page](https://github.com/praveenhonavar/Decentralized-Voting/blob/master/output-screenshot/user1-voting-approved.png)
+
+![confirm](https://github.com/praveenhonavar/Decentralized-Voting/blob/master/output-screenshot/user2-voting.png)
+
+![last](https://github.com/praveenhonavar/Decentralized-Voting/blob/master/output-screenshot/user3-approved.png)
