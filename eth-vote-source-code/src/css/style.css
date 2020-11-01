@@ -1,0 +1,92 @@
+body{
+    margin: 2em;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    color:#ffff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+span{
+    color: chartreuse;
+}
+
+
+table{
+    text-align: center;
+    width: 100%;
+}
+
+table,th,td{
+    border: 2px solid black;
+}
+
+/* th{
+    text-align: center;
+} */
+
+th,td{
+    padding: 20px;
+}
+
+#candidate1{
+    color: chartreuse;
+    font-size: 1.3em;
+}
+
+#candidate2{
+    color: chartreuse;
+    font-size: 1.3em;
+
+}
+
+#candidate1voteid{
+    color: yellow;
+    font-size: 2em;
+}
+
+#candidate2voteid{
+    color: yellow;
+    font-size: 2em;
+
+}
+
+
+.button{
+    margin-top: 4em;
+    background-color:blueviolet;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    font-weight: bolder;
+    border-radius: 2em;
+}
+
+.button:hover{
+    background-color: chartreuse;
+}
+
+#vote1
+{
+    margin: 2em;
+}
+
+#vote2
+{
+    margin: 2em;
+}
+
+
+
+.content{
+    max-width: 500px;
+    margin: auto;
+}
+
+
+
+
