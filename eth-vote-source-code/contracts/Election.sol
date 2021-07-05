@@ -18,7 +18,11 @@ contract Election {
         addCandidate('Superman');
     }
 
-    event eventVote();
+    event eventVote(
+
+        uint indexed candidateid
+    );
+
     function addCandidate(string memory name) private{
         candidateCount++;
         candidates[candidateCount] = Candidate(candidateCount,name,0); 
@@ -28,7 +32,7 @@ contract Election {
         require((candidateid > 0) && (candidateid <= candidateCount));
         voter[msg.sender] = true;
         candidates[candidateid].voteCount++;
-        emit eventVote();    
+        emit eventVote(candidateid);    
         }
 }
 

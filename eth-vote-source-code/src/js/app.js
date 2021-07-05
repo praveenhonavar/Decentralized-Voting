@@ -39,17 +39,21 @@ App = {
         web3.eth.getCoinbase(function(err, account) {
             if (err === null) {
                 App.account = account;
+                console.log(App.account);
             }
         });
 
         App.contracts.Election.deployed().then(
           function (instance) {
+          
             return instance.candidates(1);
           }).then(
             function (candidate) {
-              console.log(candidate[0].toNumber());
-              console.log(candidate[1]);
-              console.log(candidate[2].toNumber());
+
+              console.log(candidate);
+              // console.log(candidate[0].toNumber());
+              // console.log(candidate[1]);
+              // console.log(candidate[2].toNumber());
 
               document.getElementById('candidate1').innerHTML=candidate[1];  
               document.getElementById('candidate1voteid').innerHTML=candidate[2];  
@@ -78,7 +82,7 @@ App = {
     
   App.contracts.Election.deployed().then(
     function(instance){
-      return instance.addVote(1);
+      return instance.addVote(1,{from:App.account});
     }).then(
       console.log('votted')
     )
@@ -87,9 +91,10 @@ App = {
     vote2:function () {
       App.contracts.Election.deployed().then(
         function (instance) {
-          return instance.addVote(2);
-        }).then(
-          console.log('voted') 
+          return instance.addVote(2,{from:App.account});
+        }).then((res)=>{
+            console.log(res);
+        }
         )
     },
 
@@ -107,12 +112,7 @@ App = {
         });
         
     }
-
-    
-
-
-
-};
+  };
 
 $(function() {
   $(window).load(function() {
